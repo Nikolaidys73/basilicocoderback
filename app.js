@@ -4,13 +4,13 @@ const ProductManager = require('./productManager');
 const app = express();
 const manager = new ProductManager('productos.json');
 
-app.get('./ProductManager', (req, res) => {
+app.get('/products', (req, res) => {
   const { limit } = req.query;
   const products = manager.getProducts(limit);
   res.json(products);
 });
 
-app.get('./ProductManager/:pid', (req, res) => {
+app.get('/products/:pid', (req, res) => {
   const { pid } = req.params;
   const product = manager.getProductById(parseInt(pid));
   if (product) {

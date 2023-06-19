@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+
+
+
 class ProductManager {
   constructor(filePath) {
     this.productos = [];
@@ -8,7 +11,14 @@ class ProductManager {
     this.loadProducts();
   }
    
-
+  getProducts(limit) {;
+    if (limit) {
+      return this.products.slice(0, limit);
+    } else {
+      return this.products;
+    }
+  }
+   
 
   loadProducts() {
     try {
@@ -98,6 +108,12 @@ class ProductManager {
     return this.productos.some((p) => p.code === code);
   }
 }
+
+
+
+
+module.exports = ProductManager; 
+
 
 // Ejemplo de uso
 const filePath = 'productos.json';
@@ -199,4 +215,3 @@ verifyProduct.addProduct({
 
 
 
-module.exports = ProductManager; 
