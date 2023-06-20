@@ -4,15 +4,15 @@ const ProductManager = require('./productManager');
 const app = express();
 const manager = new ProductManager('productos.json');
 
-app.get('/products', (req, res) => {
+app.get('/products', async (req, res) => {
   const { limit } = req.query;
-  const products = manager.getProducts(limit);
+  const products = await manager.getProducts(limit);
   res.json(products);
 });
 
-app.get('/products/:pid', (req, res) => {
+app.get('/products/:pid', async (req, res) => {
   const { pid } = req.params;
-  const product = manager.getProductById(parseInt(pid));
+  const product = await manager.getProductById(parseInt(pid));
   if (product) {
     res.json(product);
   } else {
@@ -20,6 +20,6 @@ app.get('/products/:pid', (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log('Servidor iniciado en el puerto 8080');
+app.listen(3000, () => {
+  console.log('Servidor iniciado en el puerto 3000');
 });
