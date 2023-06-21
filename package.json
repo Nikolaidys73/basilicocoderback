@@ -1,6 +1,10 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.18.2",
     "install": "^0.13.0"
+=======
+    "express": "^4.18.2"
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   }
 }

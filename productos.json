@@ -1,14 +1,21 @@
 [
   {
+<<<<<<< HEAD
     "title": "Samsung Z flip",
     "description": "Celular Samsung Z Flip ",
     "price": 450000,
+=======
+    "title": "Producto 1",
+    "description": "Descripción del Producto 1",
+    "price": 10.99,
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
     "thumbnail": "ruta/imagen1.jpg",
     "code": "PROD001",
     "stock": 5,
     "id": 0
   },
   {
+<<<<<<< HEAD
     "title": "Motorola Rzer ultra",
     "description": "Celular motorola Plegable",
     "price": 420000,
@@ -36,13 +43,28 @@
     "id": 3
   },
   {
+=======
+    "title": "Producto 2",
+    "description": "Descripción del Producto 2",
+    "price": 430000,
+    "thumbnail": "ruta/imagen2.jpg",
+    "code": "PROD002",
+    "stock": 10,
+    "id": 1
+  },
+  {
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
     "title": "Iphone 3",
     "description": "iphone",
     "price": 550000,
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD005",
     "stock": 7,
+<<<<<<< HEAD
     "id": 4
+=======
+    "id": 3
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   },
   {
     "title": "Iphone 4",
@@ -51,7 +73,11 @@
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD006",
     "stock": 6,
+<<<<<<< HEAD
     "id": 5
+=======
+    "id": 4
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   },
   {
     "title": "Iphone 5",
@@ -60,7 +86,11 @@
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD007",
     "stock": 1,
+<<<<<<< HEAD
     "id": 6
+=======
+    "id": 5
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   },
   {
     "title": "Iphone 6",
@@ -69,7 +99,11 @@
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD008",
     "stock": 3,
+<<<<<<< HEAD
     "id": 7
+=======
+    "id": 6
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   },
   {
     "title": "Iphone 7",
@@ -78,7 +112,11 @@
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD009",
     "stock": 3,
+<<<<<<< HEAD
     "id": 8
+=======
+    "id": 7
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   },
   {
     "title": "Iphone 8",
@@ -87,6 +125,28 @@
     "thumbnail": "ruta/imagen2.jpg",
     "code": "PROD010",
     "stock": 4,
+<<<<<<< HEAD
     "id": 9
+=======
+    "id": 8
+  },
+  {
+    "title": "Iphone 1",
+    "description": "iphone 14 pro",
+    "price": 550000,
+    "thumbnail": "ruta/imagen2.jpg",
+    "code": "PROD003",
+    "stock": 5,
+    "id": 9
+  },
+  {
+    "title": "Iphone 2",
+    "description": "iphone",
+    "price": 450000,
+    "thumbnail": "ruta/imagen2.jpg",
+    "code": "PROD004",
+    "stock": 1,
+    "id": 10
+>>>>>>> fd8b4132aaa656dfbc66b2c2faa4c4f97a518f6d
   }
 ]
