@@ -4,11 +4,31 @@ const ProductManager = require('./productManager');
 const app = express();
 const manager = new ProductManager('productos.json');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.get('/products', async (req, res) => {
-  console.log('Se recibió una solicitud GET en la ruta /products');
-  const { limit } = req.query;
-  const products = manager.getProducts(parseInt(limit));
-  res.json(products);
+
+  try { 
+    
+    const limit = Number(req.query.limit);
+    console.log(limit);
+    const products = await manager.getProducts();
+
+    if (limit) {
+      const slicedProd = products.slice(0,limit)
+      res.status(200).json(slicedProd);
+    } else {
+      res.status(200).json(products);
+    }
+    
+
+  } catch (error) {
+    
+    res.status(404).json({message: error.message});
+  }
+
+
 });
 
 app.get('/products/:pid', async (req, res) => {
